@@ -1,0 +1,86 @@
+div{
+  padding: 15px;
+  background: white;
+  width: 200px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+  font-size: 25px;
+  color: rgba(0,0,0,.6);
+  margin: 0 0 10px;
+  padding: 0 5px;
+  position: relative;
+}
+
+h3:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: rgb(212, 110, 15);
+  position: absolute;
+  right: 5px;
+  bottom: 7px;
+  box-shadow: -8px -8px rgb(212, 110, 15), 0 -8px rgb(212, 110, 15), -8px 0 rgb(212, 110, 15);
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+  list-style: none;  
+}
+.menu a{ 
+  text-decoration: none;
+  display: block;  
+  font-size: 20px;
+  color: rgba(0,0,0,.6);
+  padding: 5px;
+  position: relative;
+  transition: .3s linear;
+}
+.sidebar{
+	width: 200px;
+	margin: 5px;
+}
+.menu a:hover{
+  padding: 10px 0 10px 20px;
+  background: rgb(212, 110, 15);
+  color: white;
+}
+.menu a:after {
+  content:"\f0d1";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 5px;
+  color: white;
+  transition: .2s linear;
+}
+
+.p_menu{position: relative;}
+.v_menu{
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	top: -9999px;
+	opacity: 0;
+	border-left: 10px solid transparent;
+  background: white;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.p_menu:hover .v_menu{
+	opacity: 1;
+	top: 0;
+}
+.v_menu .p_menu .v_menu{
+	opacity: 0;
+	top: 0;
+}
+.v_menu .p_menu:hover .v_menu{
+	opacity: 1;
+	top: 0;
+}
+.p_menu:hover::after{
+	transform: scaleX(-1);
+}

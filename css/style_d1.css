@@ -1,0 +1,11 @@
+body { background-color: rgb(100, 60, 37); } /* общий фон */
+      
+div {
+  width: 600px;   /* ширина */
+  height: 800px; /* высота */
+  padding: 30px 20px 30px 0px; /* внутренние отступы - верх, право, низ, лево */
+  margin: 50px auto;  /* выравнивание по центру */ 
+  box-shadow: 10px 10px 20px black; /* небольшая тень для объемности */
+  background-color: white;  /* цвет фона в блоке */
+  font-family:  "Times New Roman"; /* нужный шрифт */
+}
